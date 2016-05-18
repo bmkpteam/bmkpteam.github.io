@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>斑马快跑团队</title>
+  <title>NSString 到底是用copy还是strong？ | 斑马快跑团队</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分享&amp;总结">
-<meta property="og:type" content="website">
-<meta property="og:title" content="斑马快跑团队">
-<meta property="og:url" content="bmkpteam.github.io/index.html">
+  <meta name="description" content="本质上来讲,copy和strong都没有错,但不是说,NSString用copy就一定是最好的.
+###那么,什么时候用copy,什么时候用strong呢?
+
+首先,为什么要用copy?#####因为copy安全!copy修饰的NSString,在初始化时,如果来源是NSMutableString的话,会对来源进行一次深拷贝,将来源的内存地址复制一份,这样,两个对象就一点关系就没有了,无论你怎么操">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NSString 到底是用copy还是strong？">
+<meta property="og:url" content="bmkpteam.github.io/2016/05/18/copy-and-strong/index.html">
 <meta property="og:site_name" content="斑马快跑团队">
-<meta property="og:description" content="分享&amp;总结">
+<meta property="og:description" content="本质上来讲,copy和strong都没有错,但不是说,NSString用copy就一定是最好的.
+###那么,什么时候用copy,什么时候用strong呢?
+
+首先,为什么要用copy?#####因为copy安全!copy修饰的NSString,在初始化时,如果来源是NSMutableString的话,会对来源进行一次深拷贝,将来源的内存地址复制一份,这样,两个对象就一点关系就没有了,无论你怎么操">
+<meta property="og:updated_time" content="2016-05-18T01:05:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="斑马快跑团队">
-<meta name="twitter:description" content="分享&amp;总结">
+<meta name="twitter:title" content="NSString 到底是用copy还是strong？">
+<meta name="twitter:description" content="本质上来讲,copy和strong都没有错,但不是说,NSString用copy就一定是最好的.
+###那么,什么时候用copy,什么时候用strong呢?
+
+首先,为什么要用copy?#####因为copy安全!copy修饰的NSString,在初始化时,如果来源是NSMutableString的话,会对来源进行一次深拷贝,将来源的内存地址复制一份,这样,两个对象就一点关系就没有了,无论你怎么操">
   
     <link rel="alternate" href="/atom.xml" title="斑马快跑团队" type="application/atom+xml">
   
@@ -66,9 +76,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-copy-and-strong" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-copy-and-strong" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/05/18/copy-and-strong/" class="article-date">
   <time datetime="2016-05-18T01:04:14.000Z" itemprop="datePublished">2016-05-18</time>
@@ -81,8 +89,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/18/copy-and-strong/">NSString 到底是用copy还是strong？</a>
+    <h1 class="article-title" itemprop="name">
+      NSString 到底是用copy还是strong？
     </h1>
   
 
@@ -114,10 +122,9 @@
     </footer>
   </div>
   
-</article>
-
-
+    
   
+</article>
 
 </section>
         
